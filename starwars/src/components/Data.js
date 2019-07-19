@@ -17,11 +17,11 @@ function Data() {
   }, [])
 
   return(
-    <>
+    <div>
       {data.map(person => {
         return (person.name);
         })}
-    </>
+    </div>
   )
 }
 

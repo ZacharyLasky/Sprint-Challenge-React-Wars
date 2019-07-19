@@ -5,7 +5,7 @@ import './App.css';
 
 import styled from 'styled-components';
 //STYLES
-const DataDiv = styled.div`border: 5px solid red;`;
+const DataDiv = styled.div`border: 3px solid green;`;
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
