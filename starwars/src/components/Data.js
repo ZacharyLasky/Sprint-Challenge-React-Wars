@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Card from './Card';
 
 function Data() {
   const [data, setData] = useState([]);
@@ -16,11 +17,7 @@ function Data() {
   }, [])
 
   return(
-    <div>
-      {data.map(person => {
-        return person.name + " ";
-        })}
-    </div>
+    <Card dataProps={data}></Card>
   )
 }
 

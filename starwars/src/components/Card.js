@@ -1,16 +1,16 @@
-// import React, { useState } from 'react';
-// import styled from 'styled-components';
+import React, { useState } from 'react';
+import styled from 'styled-components';
 
-// export default function Card(props) {
+// STYLES
+const PersonDiv = styled.div`display: flex; justify-content: center; background: #6BB35D;`;
 
-//   return (
-//     <div>
-//       {const values = Object.values(props.data.results)
-//         values.map(value => {
-//           return value.name;
-//         })
-//       }
-//     </div>
-//   )
-// }
-
+export default function Card(props) {
+  const data = props.dataProps;
+    return (
+      <PersonDiv>
+        {data.map(person => {
+          return <h1>{person.name}</h1>
+        })}
+      </PersonDiv>
+      )
+    }
