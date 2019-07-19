@@ -3,6 +3,10 @@ import React from 'react';
 import Data from './components/Data';
 import './App.css';
 
+import styled from 'styled-components';
+//STYLES
+const DataDiv = styled.div`border: 5px solid red;`;
+
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
@@ -14,8 +18,10 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <Data></Data>
-    </div>
+      <DataDiv>
+        <Data></Data>
+      </DataDiv>
+  </div>
   );
 }
 
